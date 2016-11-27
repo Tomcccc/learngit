@@ -9,7 +9,9 @@ function init(){
 }
 
 function draw() {
-  var ctx = document.getElementById('canvas').getContext('2d');
+  var canvas = document.getElementById('canvas')
+  canvas.height = 300
+  var ctx = canvas.getContext('2d');
 
   ctx.globalCompositeOperation = 'destination-over';
   ctx.clearRect(0,0,300,300); // clear canvas
